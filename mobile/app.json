@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Stride",
+    "slug": "stride",
+    "scheme": "stride",
+    "version": "0.9.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "backgroundColor": "#0B1622",
+    "ios": {
+      "bundleIdentifier": "com.striderunning.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Stride uses your location to record distance and pace during runs.",
+        "NSMotionUsageDescription": "Stride uses motion data to estimate cadence on treadmill runs.",
+        "UIBackgroundModes": ["location", "audio"],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.striderunning.app",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1622"
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "FOREGROUND_SERVICE"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B1622"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
